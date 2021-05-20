@@ -1,0 +1,282 @@
+/* ===================
+BORDER RADIUS LIST
+======================= */
+$radius: 1,
+3,
+5,
+10,
+15,
+20,
+25,
+30,
+35,
+40,
+45,
+50;
+
+@each $value in $radius {
+  .rounded-#{$value} {
+    border-radius: toRef($value) !important;
+  }
+
+  .rounded-top-#{$value} {
+    border-radius: toRef($value) toRef($value) 0 0 !important;
+  }
+
+  .rounded-bottom-#{$value} {
+    border-radius: 0 0 toRef($value) toRef($value) !important;
+  }
+
+  .rounded-top-left-#{$value} {
+    border-top-left-radius: toRef($value) !important;
+  }
+
+  .rounded-top-right-#{$value} {
+    border-top-right-radius: toRef($value) !important;
+  }
+
+  .rounded-bottom-left-#{$value} {
+    border-bottom-left-radius: toRef($value) !important;
+  }
+
+  .rounded-bottom-right-#{$value} {
+    border-bottom-right-radius: toRef($value) !important;
+  }
+}
+
+
+/* ===================
+Z-INDEXING
+======================= */
+$indexes: 1,
+9,
+49,
+99,
+999 2000;
+
+@each $index in $indexes {
+  .index-#{$index} {
+    z-index: #{$index};
+  }
+
+  .index--#{$index} {
+    z-index: -#{$index};
+  }
+}
+
+/* ====================================
+Cursor, Selection, Link and Transition
+======================================= */
+.pointer {
+  cursor: pointer;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-no-underline {
+  text-decoration: none !important;
+}
+
+.smooth-transition {
+  transition: all 0.4s ease-in-out;
+}
+
+.smooth-animation {
+  transition: top 0.5s ease-in-out;
+  animation: panel-slide-down 0.6s ease-in-out forwards;
+}
+
+/* ========================
+BORDER SHADOW EFFECT
+============================ */
+.box-shadow-effect {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navigation-shadow-effect {
+  box-shadow: 2px 5px 10px rgba(145, 149, 158, 0.051);
+}
+
+.no-shadow {
+  box-shadow: unset !important;
+}
+
+/* ===================
+MARGINS
+======================= */
+@for $i from 80 through 0 {
+  .mg-#{$i} {
+    margin: toRef($i) !important;
+  }
+
+  .mgt-#{$i} {
+    margin-top: toRef($i) !important;
+  }
+
+  .mgt--#{$i} {
+    margin-top: -toRef($i) !important;
+  }
+
+  .mgb-#{$i} {
+    margin-bottom: toRef($i) !important;
+  }
+
+  .mgb--#{$i} {
+    margin-bottom: -toRef($i) !important;
+  }
+
+  .mgl-#{$i} {
+    margin-left: toRef($i) !important;
+  }
+
+  .mgl--#{$i} {
+    margin-left: -toRef($i) !important;
+  }
+
+  .mgr-#{$i} {
+    margin-right: toRef($i) !important;
+  }
+
+  .mgr--#{$i} {
+    margin-right: -toRef($i) !important;
+  }
+
+  .mgy-#{$i} {
+    margin-top: -toRef($i) !important;
+    margin-bottom: -toRef($i) !important;
+  }
+
+  .mgx-#{$i} {
+    margin-left: -toRef($i) !important;
+    margin-right: -toRef($i) !important;
+  }
+}
+
+/* ===================
+PADDINGS
+======================= */
+@for $i from 70 through 0 {
+  .pd-#{$i} {
+    padding: toRef($i) !important;
+  }
+
+  .pdt-#{$i} {
+    padding-top: toRef($i) !important;
+  }
+
+  .pdb-#{$i} {
+    padding-bottom: toRef($i) !important;
+  }
+
+  .pdl-#{$i} {
+    padding-left: toRef($i) !important;
+  }
+
+  .pdr-#{$i} {
+    padding-right: toRef($i) !important;
+  }
+
+  .pdy-#{$i} {
+    padding-top: toRef($i) !important;
+    padding-bottom: toRef($i) !important;
+  }
+
+  .pdx-#{$i} {
+    padding-left: toRef($i) !important;
+    padding-right: toRef($i) !important;
+  }
+}
+
+/* ===============================
+FONT SIZE LIST ACROSS BREAKPOINTS
+================================== */
+@for $i from 70 through 4 {
+  .gfont-#{$i} {
+    font-size: toRef($i) !important;
+    line-height: #{($i + 4.5) / 16}rem !important;
+  }
+
+  .gfont-#{$i}-5 {
+    font-size: #{($i + 0.5) / 16}rem !important;
+    line-height: #{($i + 4.5) / 16}rem !important;
+  }
+}
+
+/* ===================
+FONT STYLING
+======================= */
+.font-normal {
+  font-style: normal !important;
+}
+
+.font-italics {
+  font-style: italic !important;
+}
+
+.font-oblique {
+  font-style: oblique !important;
+}
+
+// LEFT ALIGNMENT
+.align-left {
+  text-align: left;
+}
+
+// RIGHT ALIGNMENT
+.align-right {
+  text-align: right;
+}
+
+// JUSTIFY ALIGNMENT
+.align-justify {
+  text-align: justify;
+}
+
+/* ===================
+FONT WEIGHT LIST
+======================= */
+$weights: 400,
+500,
+600,
+700,
+800,
+900;
+
+@each $weight in $weights {
+  .font-weight-#{$weight} {
+    font-weight: #{$weight} !important;
+  }
+}
+
+/* ===================
+ORIENTATION
+======================= */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate--90 {
+  transform: rotate(-90deg);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
