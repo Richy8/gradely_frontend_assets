@@ -1,6 +1,6 @@
 {
   "name": "gradely_frontend_assets",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This package contains gradely basic stylings reusable across its micro frontend applications",
   "main": "index.html",
   "scripts": {
