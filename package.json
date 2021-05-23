@@ -1,6 +1,6 @@
 {
   "name": "asset_store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This package contains gradely basic stylings reusable across its micro frontend applications",
   "main": "index.html",
   "scripts": {
