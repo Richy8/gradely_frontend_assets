@@ -2,7 +2,7 @@
 
 Asset store is a css and fonts store built specifically for gradely organisation. It contains basic utilities, forms, breakpoints, colors and buttons styles.
 
-### Prerequisites
+### Getting Started
 
 This package can be installed with any frontend framework via npm or used directly via npm.
 
@@ -22,7 +22,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Efemena_Elvis**
+- **Efemena Elvis**
 
 ## License
 
