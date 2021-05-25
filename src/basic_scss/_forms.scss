@@ -312,3 +312,22 @@ label {
         }
     }
 }
+
+// ROUNDED WHITE BG SELECT FORM COMPONENT
+.rounded-select {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid $border-grey-light;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: $color-grey-dark;
+    padding: 8px 20px;
+
+    &:focus {
+        border: 1px solid $brand-accent;
+    }
+
+    @include breakpoint-down(xs) {
+        font-size: 12px;
+    }
+}
