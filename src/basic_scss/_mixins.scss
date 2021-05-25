@@ -23,6 +23,15 @@ FULL BACKGROUND CONTAIN DISPLAY
     object-fit: contain;
 }
 
+/* ====================
+FULL WIDTH AND HEIGHT
+======================= */
+@mixin full-width-height {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 /* =================
 STRETCHED AREA
 ==================== */
