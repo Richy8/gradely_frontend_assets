@@ -124,6 +124,16 @@ input[disabled] {
     }
 }
 
+// SELECT FORM STYLING 
+select.form-control {
+    background: $white-text url(../img/arrow-down.png) right center no-repeat;
+
+    &:focus {
+        outline: none;
+        background: $white-text url(../img/arrow-down.png) right center no-repeat;
+    }
+}
+
 // INPUT RADIO STYLING
 input[type="radio"],
 .radio input[type="radio"],
