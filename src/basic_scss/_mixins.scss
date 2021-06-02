@@ -1,5 +1,5 @@
 // CONVERT PX TO REF 
-@function toRef($size) {
+@function toRem($size) {
     @return #{$size/16}rem;
 }
 
@@ -81,20 +81,20 @@ FIXED FULL DISPLAY AREA
 SQUARE SHAPE BUILDER
 ======================= */
 @mixin square-shape($value) {
-    min-width: toRef($value);
-    min-height: toRef($value);
-    width: toRef($value);
-    height: toRef($value);
+    min-width: toRem($value);
+    min-height: toRem($value);
+    width: toRem($value);
+    height: toRem($value);
 }
 
 /* ======================
 RECTANGLE SHAPE BUILDER
 ========================= */
 @mixin rectangle-shape($width, $height) {
-    min-width: toRef($width);
-    min-height: toRef($height);
-    width: toRef($width);
-    height: toRef($height);
+    min-width: toRem($width);
+    min-height: toRem($height);
+    width: toRem($width);
+    height: toRem($height);
 }
 
 /* ==============
@@ -320,6 +320,6 @@ SMOOTH TRANSITIONING
 FONT STYLING
 ===================== */
 @mixin font-height($size, $height) {
-    font-size: toRef($size);
-    line-height: toRef($height);
+    font-size: toRem($size);
+    line-height: toRem($height);
 }

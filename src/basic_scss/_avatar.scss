@@ -20,11 +20,11 @@
   color: $white-text;
   vertical-align: middle;
   border-style: none;
-  font-size: toRef(13);
+  font-size: toRem(13);
   box-sizing: border-box;
 
   &-square {
-    border-radius: toRef(5);
+    border-radius: toRem(5);
   }
 
   .avatar-img {
@@ -42,7 +42,7 @@
 
 .avatar-avg {
   @include square-shape(32);
-  font-size: toRef(11);
+  font-size: toRem(11);
 
   @include breakpoint-down(sm) {
     @include square-shape(24);
@@ -51,12 +51,12 @@
 
 .avatar-xs {
   @include square-shape(20);
-  font-size: toRef(9);
+  font-size: toRem(9);
 }
 
 .avatar-sm {
   @include square-shape(24);
-  font-size: toRef(11);
+  font-size: toRem(11);
 }
 
 .avatar-sm-md {
@@ -120,11 +120,11 @@
 
 .avatar-xxl {
   @include square-shape(128);
-  font-size: toRef(64);
+  font-size: toRem(64);
 
   @include breakpoint-down(lg) {
     @include square-shape(100);
-    font-size: toRef(48);
+    font-size: toRem(48);
   }
 
   @include breakpoint-down(md) {
@@ -138,26 +138,26 @@
 
 .avatar-big {
   @include square-shape(200);
-  font-size: toRef(100);
+  font-size: toRem(100);
 
   @include breakpoint-down(lg) {
     @include square-shape(155);
-    font-size: toRef(80);
+    font-size: toRem(80);
   }
 }
 
 .avatar-massive {
   @include square-shape(256);
-  font-size: toRef(120);
+  font-size: toRem(120);
 
   @include breakpoint-down(lg) {
     @include square-shape(240);
-    font-size: toRef(100);
+    font-size: toRem(100);
   }
 
   @include breakpoint-down(md) {
     @include square-shape(128);
-    font-size: toRef(64);
+    font-size: toRem(64);
   }
 }
 
@@ -182,17 +182,17 @@
     color: $brand-navy;
 
     @include breakpoint-down(sm) {
-      font-size: toRef(14);
+      font-size: toRem(14);
     }
   }
 
   .avatar-meta {
-    font-size: toRef(12);
+    font-size: toRem(12);
     font-weight: normal;
     color: $color-ash;
 
     @include breakpoint-down(sm) {
-      font-size: toRef(11);
+      font-size: toRem(11);
     }
   }
 }

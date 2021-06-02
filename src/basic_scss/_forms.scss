@@ -16,7 +16,7 @@ input {
 // FORM GROUP
 .form-group {
     position: relative;
-    margin-bottom: toRef(25);
+    margin-bottom: toRem(25);
 }
 
 // FORM LABEL
@@ -25,8 +25,8 @@ input {
     font-size: 1em;
     padding-top: 0;
     margin-bottom: 0;
-    padding-bottom: toRef(8);
-    line-height: toRef(22);
+    padding-bottom: toRem(8);
+    line-height: toRem(22);
     color: $color-grey-dark;
 
     [class*="checkbox"] &,
@@ -35,11 +35,11 @@ input {
     }
 
     @include breakpoint-down(sm) {
-        font-size: toRef(12) !important;
+        font-size: toRem(12) !important;
     }
 
     @include breakpoint-down(xs) {
-        font-size: toRef(11) !important;
+        font-size: toRem(11) !important;
     }
 }
 
@@ -48,12 +48,12 @@ input {
     color: $color-ash;
 
     @include breakpoint-down(md) {
-        margin-bottom: toRef(15);
-        font-size: toRef(13);
+        margin-bottom: toRem(15);
+        font-size: toRem(13);
     }
 
     @include breakpoint-down(sm) {
-        font-size: toRef(11.5);
+        font-size: toRem(11.5);
     }
 }
 
@@ -62,7 +62,7 @@ input {
     font-size: .85em;
     color: $color-grey-dark;
     font-style: italic;
-    margin: toRef(8);
+    margin: toRem(8);
 }
 
 // INPUT DISABLED
@@ -98,12 +98,12 @@ input[disabled] {
     }
 
     @include breakpoint-down(sm) {
-        font-size: toRef(12);
+        font-size: toRem(12);
         ;
     }
 
     @include breakpoint-down(xs) {
-        font-size: toRef(11);
+        font-size: toRem(11);
         ;
     }
 

@@ -1,0 +1,29 @@
+.gradely-app-container {
+    position: relative;
+    top: 130px;
+    height: auto;
+    margin-bottom: 200px !important;
+
+    @include breakpoint-down(sm) {
+        top: 110px;
+        margin-bottom: 220px !important;
+    }
+}
+
+.gradely-container {
+    @include breakpoint-up(sm) {
+        max-width: 700px;
+    }
+
+    @include breakpoint-up(md) {
+        max-width: 770px;
+    }
+
+    @include breakpoint-up(lg) {
+        max-width: 960px;
+    }
+
+    @include breakpoint-up(xl) {
+        max-width: 1250px;
+    }
+}

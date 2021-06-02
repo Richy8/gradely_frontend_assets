@@ -16,31 +16,31 @@ $radius: 1,
 
 @each $value in $radius {
   .rounded-#{$value} {
-    border-radius: toRef($value) !important;
+    border-radius: toRem($value) !important;
   }
 
   .rounded-top-#{$value} {
-    border-radius: toRef($value) toRef($value) 0 0 !important;
+    border-radius: toRem($value) toRem($value) 0 0 !important;
   }
 
   .rounded-bottom-#{$value} {
-    border-radius: 0 0 toRef($value) toRef($value) !important;
+    border-radius: 0 0 toRem($value) toRem($value) !important;
   }
 
   .rounded-top-left-#{$value} {
-    border-top-left-radius: toRef($value) !important;
+    border-top-left-radius: toRem($value) !important;
   }
 
   .rounded-top-right-#{$value} {
-    border-top-right-radius: toRef($value) !important;
+    border-top-right-radius: toRem($value) !important;
   }
 
   .rounded-bottom-left-#{$value} {
-    border-bottom-left-radius: toRef($value) !important;
+    border-bottom-left-radius: toRem($value) !important;
   }
 
   .rounded-bottom-right-#{$value} {
-    border-bottom-right-radius: toRef($value) !important;
+    border-bottom-right-radius: toRem($value) !important;
   }
 }
 
@@ -116,49 +116,49 @@ MARGINS
 ======================= */
 @for $i from 100 through 0 {
   .mg-#{$i} {
-    margin: toRef($i) !important;
+    margin: toRem($i) !important;
   }
 
   .mgt-#{$i} {
-    margin-top: toRef($i) !important;
+    margin-top: toRem($i) !important;
   }
 
   .mgt--#{$i} {
-    margin-top: -toRef($i) !important;
+    margin-top: -toRem($i) !important;
   }
 
   .mgb-#{$i} {
-    margin-bottom: toRef($i) !important;
+    margin-bottom: toRem($i) !important;
   }
 
   .mgb--#{$i} {
-    margin-bottom: -toRef($i) !important;
+    margin-bottom: -toRem($i) !important;
   }
 
   .mgl-#{$i} {
-    margin-left: toRef($i) !important;
+    margin-left: toRem($i) !important;
   }
 
   .mgl--#{$i} {
-    margin-left: -toRef($i) !important;
+    margin-left: -toRem($i) !important;
   }
 
   .mgr-#{$i} {
-    margin-right: toRef($i) !important;
+    margin-right: toRem($i) !important;
   }
 
   .mgr--#{$i} {
-    margin-right: -toRef($i) !important;
+    margin-right: -toRem($i) !important;
   }
 
   .mgy-#{$i} {
-    margin-top: -toRef($i) !important;
-    margin-bottom: -toRef($i) !important;
+    margin-top: -toRem($i) !important;
+    margin-bottom: -toRem($i) !important;
   }
 
   .mgx-#{$i} {
-    margin-left: -toRef($i) !important;
-    margin-right: -toRef($i) !important;
+    margin-left: -toRem($i) !important;
+    margin-right: -toRem($i) !important;
   }
 }
 
@@ -167,33 +167,33 @@ PADDINGS
 ======================= */
 @for $i from 70 through 0 {
   .pd-#{$i} {
-    padding: toRef($i) !important;
+    padding: toRem($i) !important;
   }
 
   .pdt-#{$i} {
-    padding-top: toRef($i) !important;
+    padding-top: toRem($i) !important;
   }
 
   .pdb-#{$i} {
-    padding-bottom: toRef($i) !important;
+    padding-bottom: toRem($i) !important;
   }
 
   .pdl-#{$i} {
-    padding-left: toRef($i) !important;
+    padding-left: toRem($i) !important;
   }
 
   .pdr-#{$i} {
-    padding-right: toRef($i) !important;
+    padding-right: toRem($i) !important;
   }
 
   .pdy-#{$i} {
-    padding-top: toRef($i) !important;
-    padding-bottom: toRef($i) !important;
+    padding-top: toRem($i) !important;
+    padding-bottom: toRem($i) !important;
   }
 
   .pdx-#{$i} {
-    padding-left: toRef($i) !important;
-    padding-right: toRef($i) !important;
+    padding-left: toRem($i) !important;
+    padding-right: toRem($i) !important;
   }
 }
 
@@ -202,7 +202,7 @@ FONT SIZE LIST ACROSS BREAKPOINTS
 ================================== */
 @for $i from 70 through 4 {
   .gfont-#{$i} {
-    font-size: toRef($i) !important;
+    font-size: toRem($i) !important;
     line-height: #{($i + 4.5) / 16}rem !important;
   }
 

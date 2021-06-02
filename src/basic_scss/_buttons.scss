@@ -50,8 +50,8 @@ button[disabled] {
 
 .btn {
   position: relative;
-  border-radius: toRef(40);
-  padding: toRef(13) toRef(32);
+  border-radius: toRem(40);
+  padding: toRem(13) toRem(32);
   letter-spacing: 0.05em;
   font-weight: 700 !important;
   background-color: transparent;
@@ -61,25 +61,25 @@ button[disabled] {
   border: none;
   cursor: pointer;
   max-width: 100%;
-  box-shadow: toRef(0) toRef(0) toRef(0) transparent;
+  box-shadow: toRem(0) toRem(0) toRem(0) transparent;
   text-decoration: none !important;
   @include flex-row-center-nowrap;
   @include transition(0.6s);
   @include font-height(12, 16);
 
   @include breakpoint-up(md) {
-    font-size: toRef(10);
+    font-size: toRem(10);
     min-width: 100px;
 
     +.btn {
-      margin-left: toRef(24);
+      margin-left: toRem(24);
     }
   }
 
   &:hover,
   &:focus {
     text-decoration: none !important;
-    box-shadow: toRef(2) toRef(5) toRef(10) 0 rgba($brand-black, 0.4);
+    box-shadow: toRem(2) toRem(5) toRem(10) 0 rgba($brand-black, 0.4);
 
     .no-touch & {
       outline: none;
@@ -169,7 +169,7 @@ button[disabled] {
 .btn-primary-outline {
   background-color: transparent !important;
   color: $brand-primary !important;
-  border: toRef(2) solid $brand-primary !important;
+  border: toRem(2) solid $brand-primary !important;
 
   &:hover,
   &:focus {
@@ -182,7 +182,7 @@ button[disabled] {
 .btn-default-outline {
   background-color: transparent;
   color: $color-text;
-  border: toRef(2) solid $border-grey;
+  border: toRem(2) solid $border-grey;
 
   &:hover,
   &:focus {
@@ -208,7 +208,7 @@ button[disabled] {
 .btn-inverse-outline {
   background-color: transparent;
   color: $brand-inverse;
-  border: toRef(2) solid $brand-inverse;
+  border: toRem(2) solid $brand-inverse;
 
   &:hover,
   &:focus {
@@ -221,7 +221,7 @@ button[disabled] {
 .btn-tonic-outline {
   background-color: transparent;
   color: $brand-tonic;
-  border: toRef(2) solid $brand-tonic;
+  border: toRem(2) solid $brand-tonic;
 
   &:hover,
   &:focus {
@@ -233,24 +233,24 @@ button[disabled] {
 
 .btn-md {
   @include breakpoint-down(lg) {
-    font-size: toRef(11) !important;
-    padding: toRef(15) toRef(27) !important;
+    font-size: toRem(11) !important;
+    padding: toRem(15) toRem(27) !important;
   }
 
   @include breakpoint-down(sm) {
-    font-size: toRef(10) !important;
-    padding: toRef(12) toRef(21) !important;
+    font-size: toRem(10) !important;
+    padding: toRem(12) toRem(21) !important;
   }
 }
 
 .btn-sm.btn,
 .btn-group-sm>.btn {
-  font-size: toRef(12);
-  padding: toRef(8.5) 1.5em;
+  font-size: toRem(12);
+  padding: toRem(8.5) 1.5em;
 
   @include breakpoint-down(sm) {
-    font-size: toRef(9);
-    padding: toRef(8.5) toRef(16);
+    font-size: toRem(9);
+    padding: toRem(8.5) toRem(16);
   }
 }
 
