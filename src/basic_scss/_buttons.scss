@@ -44,14 +44,14 @@ button[disabled] {
   cursor: not-allowed;
   user-select: none;
   pointer-events: none;
-  color: $brand-navy !important;
+  color: $color-text !important;
   background: darken($border-grey, 3%) !important;
 }
 
 .btn {
   position: relative;
   border-radius: toRem(40);
-  padding: toRem(13) toRem(32);
+  padding: toRem(14) toRem(32);
   letter-spacing: 0.05em;
   font-weight: 700 !important;
   background-color: transparent;
@@ -63,17 +63,24 @@ button[disabled] {
   max-width: 100%;
   box-shadow: toRem(0) toRem(0) toRem(0) transparent;
   text-decoration: none !important;
+  white-space: nowrap;
   @include flex-row-center-nowrap;
   @include transition(0.6s);
-  @include font-height(12, 16);
+  @include font-height(12, 17);
 
-  @include breakpoint-up(md) {
-    font-size: toRem(10);
-    min-width: 100px;
 
-    +.btn {
-      margin-left: toRem(24);
-    }
+  @include breakpoint-down(md) {
+    @include font-height(11.75, 16);
+  }
+
+  @include breakpoint-down(sm) {
+    @include font-height(11, 15);
+    padding: toRem(13) toRem(25);
+  }
+
+  @include breakpoint-down(xs) {
+    @include font-height(10.75, 14);
+    padding: toRem(12.5) toRem(25);
   }
 
   &:hover,
@@ -99,7 +106,7 @@ button[disabled] {
 
 .btn-accent {
   background-color: $brand-accent !important;
-  color: $brand-black !important;
+  color: $brand-navy !important;
   @include transition(0.6s);
 
   &:hover,
@@ -231,27 +238,9 @@ button[disabled] {
   }
 }
 
-.btn-md {
-  @include breakpoint-down(lg) {
-    font-size: toRem(11) !important;
-    padding: toRem(15) toRem(27) !important;
-  }
-
-  @include breakpoint-down(sm) {
-    font-size: toRem(10) !important;
-    padding: toRem(12) toRem(21) !important;
-  }
-}
-
-.btn-sm.btn,
-.btn-group-sm>.btn {
-  font-size: toRem(12);
-  padding: toRem(8.5) 1.5em;
-
-  @include breakpoint-down(sm) {
-    font-size: toRem(9);
-    padding: toRem(8.5) toRem(16);
-  }
+.btn-circle {
+  @include square-shape(36);
+  border-radius: 50%;
 }
 
 .btn-link {
