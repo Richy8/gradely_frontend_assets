@@ -101,11 +101,11 @@ Cursor, Selection, Link and Transition
 BORDER SHADOW EFFECT
 ============================ */
 .box-shadow-effect {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 toRem(1) toRem(4) rgba(0, 0, 0, 0.15);
 }
 
 .navigation-shadow-effect {
-  box-shadow: 2px 5px 10px rgba(145, 149, 158, 0.051);
+  box-shadow: toRem(2) toRem(5) toRem(10) rgba(145, 149, 158, 0.051);
 }
 
 .no-shadow {
