@@ -14,54 +14,68 @@
 
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
-	&:after {
-		background-color: $color;
-		text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
-	}
+    &:after {
+        background-color: $color;
+        text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
+    }
 
-	// generate arrow color style
-	@include arrow-border-color($color);
+    // generate arrow color style
+    @include arrow-border-color($color);
 }
 
 /**
  * Error
  */
 .#{$hintPrefix}error {
-	@include hint-type($hintErrorColor);
+    @include hint-type($hintErrorColor);
 }
 
 /**
  * Warning
  */
 .#{$hintPrefix}warning {
-	@include hint-type($hintWarningColor)
+    @include hint-type($hintWarningColor)
 }
 
 /**
  * Info
  */
 .#{$hintPrefix}info {
-	@include hint-type($hintInfoColor)
+    @include hint-type($hintInfoColor)
 }
 
 /**
  * Success
  */
 .#{$hintPrefix}success {
-	@include hint-type($hintSuccessColor)
+    @include hint-type($hintSuccessColor)
 }
 
 /**
  * Primary
  */
 .#{$hintPrefix}primary {
-	@include hint-type($hintPrimaryColor)
+    @include hint-type($hintPrimaryColor)
+}
+
+/**
+ * Mid Blue
+ */
+.#{$hintPrefix}mid--blue {
+    @include hint-type($hintMidBlueColor)
+}
+
+/**
+ * Navy
+ */
+.#{$hintPrefix}navy {
+    @include hint-type($hintNavyColor)
 }
 
 /**
  * Inverse
  */
 .#{$hintPrefix}inverse {
-	@include hint-type($hintInverseColor);
-	color: rgb(6, 29, 39) !important;
+    @include hint-type($hintInverseColor);
+    color: rgb(6, 29, 39) !important;
 }
