@@ -59,13 +59,6 @@
 }
 
 /**
- * Mid Blue
- */
-.#{$hintPrefix}mid--blue {
-    @include hint-type($hintMidBlueColor)
-}
-
-/**
  * Navy
  */
 .#{$hintPrefix}navy {
