@@ -281,3 +281,36 @@ ORIENTATION
 .rotate-45 {
   transform: rotate(45deg);
 }
+
+/* ===================
+POSITIONING
+======================= */
+$positions: 0,
+2,
+5,
+7,
+10,
+15,
+20,
+25,
+50,
+75,
+100;
+
+@each $position in $positions {
+  top-#{$position} {
+    top: toRem($position);
+  }
+
+  left-#{$position} {
+    left: toRem($position);
+  }
+
+  bottom-#{$position} {
+    bottom: toRem($position);
+  }
+
+  right-#{$position} {
+    right: toRem($position);
+  }
+}
