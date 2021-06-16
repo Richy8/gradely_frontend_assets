@@ -238,6 +238,7 @@
  }
 
  .modal-cover-header {
+   margin-top: toRem(5);
    padding: toRem(22) toRem(24) toRem(17);
 
    @include breakpoint-down(md) {
@@ -245,6 +246,7 @@
    }
 
    @include breakpoint-down(xs) {
+     margin-top: toRem(4);
      padding: toRem(22) toRem(12) toRem(17) !important;
    }
 
