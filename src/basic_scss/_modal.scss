@@ -117,8 +117,8 @@
        }
 
        @include breakpoint-down(xs) {
-         top: toRem(17);
-         right: toRem(17);
+         top: toRem(16.5);
+         right: toRem(16);
          @include square-shape(26);
        }
 
@@ -169,7 +169,7 @@
    }
 
    .modal-sm-md-init {
-     width: toRem(490);
+     width: toRem(500);
 
      @include breakpoint-down(sm) {
        width: 95%;
@@ -245,7 +245,7 @@
    }
 
    @include breakpoint-down(xs) {
-     padding: toRem(22) toRem(13) toRem(17);
+     padding: toRem(22) toRem(12) toRem(17) !important;
    }
 
    .modal-cover-title {
@@ -294,7 +294,7 @@
    }
 
    @include breakpoint-down(xs) {
-     padding: toRem(10) toRem(13);
+     padding: toRem(10) toRem(12) !important;
    }
 
    &::-webkit-scrollbar {
@@ -319,12 +319,12 @@
    }
 
    @include breakpoint-down(xs) {
-     padding: toRem(14) toRem(13) toRem(16);
+     padding: toRem(14) toRem(12) toRem(16) !important;
    }
 
    .btn {
      @include breakpoint-down(xs) {
-       padding: toRem(11.5) toRem(23);
+       padding: toRem(11.5) toRem(23) !important;
        font-size: toRem(10.25) !important;
      }
    }
