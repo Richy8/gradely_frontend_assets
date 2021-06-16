@@ -126,7 +126,7 @@
          @include center-placement;
 
          @include breakpoint-down(xs) {
-           font-size: toRem(12.5);
+           font-size: toRem(12.5) !important;
          }
        }
      }
