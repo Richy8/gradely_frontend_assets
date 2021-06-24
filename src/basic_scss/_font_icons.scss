@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?nrrdfz');
-  src: url('../fonts/icomoon.eot?nrrdfz#iefix') format("embedded-opentype"), url('../fonts/icomoon.ttf?nrrdfz') format("truetype"), url('../fonts/icomoon.woff?nrrdfz') format("woff"), url('../fonts/icomoon.svg?nrrdfz#icomoon') format("svg");
+  src: url('../fonts/icomoon.eot?hfi9p');
+  src: url('../fonts/icomoon.eot?hfi9p#iefix') format("embedded-opentype"), url('../fonts/icomoon.ttf?hfi9p') format("truetype"), url('../fonts/icomoon.woff?hfi9p') format("woff"), url('../fonts/icomoon.svg?hfi9p#icomoon') format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,6 +21,22 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-low-signal:before {
+  content: "\e9c6";
+}
+
+.icon-full-signal:before {
+  content: "\e9c7";
+}
+
+.icon-verified-note:before {
+  content: "\e9c8";
+}
+
+.icon-video-cam-outline:before {
+  content: "\e9c9";
 }
 
 .icon-invitation:before {
