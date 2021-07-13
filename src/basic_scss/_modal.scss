@@ -212,8 +212,28 @@
      }
    }
 
+   .modal-semi-lg {
+     width: toRem(880);
+
+     @include breakpoint-down(md) {
+       width: 90%;
+     }
+
+     @include breakpoint-down(sm) {
+       width: 97%;
+     }
+   }
+
    .modal-large {
      width: toRem(1000);
+
+     @include breakpoint-down(md) {
+       width: 90%;
+     }
+
+     @include breakpoint-down(sm) {
+       width: 97%;
+     }
    }
 
    .modal-move-right {
