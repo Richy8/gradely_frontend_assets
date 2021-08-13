@@ -20,7 +20,7 @@
    position: fixed;
    overflow: auto !important;
    z-index: 2000;
-   background-color: rgba(rgb(36, 35, 35), .9);
+   background: rgba(rgb(36, 35, 35), .9) !important;
 
    .modal-box {
      @extend %modal-styling;
@@ -144,17 +144,6 @@
      }
    }
 
-   .modal-mini {
-     width: toRem(360) !important;
-
-     @include breakpoint-custom-up-down(450, 650) {
-       width: toRem(425) !important;
-     }
-
-     @include breakpoint-down(sm) {
-       width: 95% !important;
-     }
-   }
 
    .modal-xxs {
      width: toRem(380) !important;
