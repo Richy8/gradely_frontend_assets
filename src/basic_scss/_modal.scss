@@ -169,6 +169,18 @@
      }
    }
 
+   .modal-mini {
+     width: toRem(450) !important;
+
+     @include breakpoint-custom-up-down(450, 650) {
+       width: toRem(500) !important;
+     }
+
+     @include breakpoint-down(sm) {
+       width: 95% !important;
+     }
+   }
+
    .modal-small {
      width: toRem(480) !important;
 
