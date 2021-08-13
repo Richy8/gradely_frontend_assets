@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?plujki');
-  src: url('../fonts/icomoon.eot?plujki#iefix') format("embedded-opentype"), url('../fonts/icomoon.ttf?plujki') format("truetype"), url('../fonts/icomoon.woff?plujki') format("woff"), url('../fonts/icomoon.svg?plujki#icomoon') format("svg");
+  src: url('../fonts/icomoon.eot?181q2q');
+  src: url('../fonts/icomoon.eot?181q2q#iefix') format("embedded-opentype"), url('../fonts/icomoon.ttf?181q2q') format("truetype"), url('../fonts/icomoon.woff?181q2q') format("woff"), url('../fonts/icomoon.svg?181q2q#icomoon') format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,6 +21,30 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-note-text-fill:before {
+  content: "\e9dc";
+}
+
+.icon-chats-circle:before {
+  content: "\e9dd";
+}
+
+.icon-select:before {
+  content: "\e9de";
+}
+
+.icon-crown:before {
+  content: "\e9df";
+}
+
+.icon-share-network:before {
+  content: "\e9e0";
+}
+
+.icon-question-hexagon:before {
+  content: "\e9e1";
 }
 
 .icon-double-caret-down:before {

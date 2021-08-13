@@ -94,6 +94,11 @@ button[disabled] {
   }
 }
 
+.btn-md {
+  padding: toRem(12) toRem(30);
+  @include font-height(11, 15);
+}
+
 .btn-primary {
   background-color: $brand-primary !important;
 

@@ -20,7 +20,9 @@
    position: fixed;
    overflow: auto !important;
    z-index: 2000;
-   background: rgba(rgb(36, 35, 35), .9) !important;
+   //  background: rgba(rgb(36, 35, 35), .9) !important;
+   background: #000000;
+   opacity: 0.8;
 
    .modal-box {
      @extend %modal-styling;
