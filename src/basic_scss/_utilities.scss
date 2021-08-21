@@ -16,7 +16,8 @@ $radius: 1,
 35,
 40,
 45,
-50;
+50,
+55;
 
 @each $value in $radius {
   .rounded-#{$value} {
