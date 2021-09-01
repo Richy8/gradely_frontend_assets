@@ -6,6 +6,7 @@
 }
 
 .skeleton-loader::after {
+    position: relative;
     display: block;
     content: "";
     width: 100%;
