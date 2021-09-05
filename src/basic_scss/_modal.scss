@@ -296,12 +296,13 @@
    }
 
    .modal-cover-title {
-     @include font-height(15, 21);
+     @include font-height(14, 21);
      color: $color-text;
      font-weight: 700;
 
      @include breakpoint-down(md) {
-       @include font-height(14.75, 20);
+       font-weight: 600;
+       @include font-height(13.75, 20);
      }
 
      @include breakpoint-down(sm) {
@@ -314,7 +315,7 @@
    }
 
    .modal-cover-meta {
-     @include font-height(14, 19);
+     @include font-height(12.5, 19);
      color: $color-ash;
      margin-top: toRem(3);
 
