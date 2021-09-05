@@ -166,7 +166,7 @@
   @include flex-row-center-nowrap;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
@@ -177,7 +177,7 @@
 
   .avatar-title {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     @include font-height(16, 19);
     color: $brand-navy;
 

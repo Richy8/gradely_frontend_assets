@@ -104,7 +104,6 @@ input[disabled] {
 
     @include breakpoint-down(xs) {
         font-size: toRem(11);
-        ;
     }
 
     &.width_auto {
@@ -219,16 +218,16 @@ input[type="checkbox"],
     }
 
     &:after {
-     content: "";
-     display: block;
-     @include square-shape(19);
-     margin-top: -0.125rem;
-     margin-right: 0.4688rem;
-     border: 0.0625rem solid $border-grey-dark;
-     border-radius: 0.1875rem;
-     transition: all 240ms;
-     overflow: hidden;
- }
+        content: "";
+        display: block;
+        @include square-shape(19);
+        margin-top: -0.125rem;
+        margin-right: 0.4688rem;
+        border: 0.0625rem solid $border-grey-dark;
+        border-radius: 0.1875rem;
+        transition: all 240ms;
+        overflow: hidden;
+    }
 
     &:checked:before {
         content: "";
