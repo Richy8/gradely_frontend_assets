@@ -99,7 +99,6 @@ input[disabled] {
 
     @include breakpoint-down(sm) {
         font-size: toRem(12);
-        ;
     }
 
     @include breakpoint-down(xs) {

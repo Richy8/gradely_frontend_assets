@@ -20,7 +20,7 @@
    position: fixed;
    overflow: auto !important;
    z-index: 2000;
-   background: rgba(#000000, .875) !important;
+   background: rgba(#000000, .925) !important;
 
    .modal-box {
      @extend %modal-styling;
@@ -296,7 +296,7 @@
    }
 
    .modal-cover-title {
-     @include font-height(13, 21);
+     @include font-height(13.5, 18);
      color: $color-text;
      font-weight: 700;
 
