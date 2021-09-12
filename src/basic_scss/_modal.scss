@@ -20,7 +20,7 @@
    position: fixed;
    overflow: auto !important;
    z-index: 2000;
-   background: rgba(#000000, .925) !important;
+   background: rgba(#000000, .95) !important;
 
    .modal-box {
      @extend %modal-styling;
@@ -294,34 +294,35 @@
      margin-top: toRem(4);
      padding: toRem(22) toRem(14.5) toRem(17) !important;
    }
+ }
 
-   .modal-cover-title {
-     @include font-height(13.5, 18);
-     color: $color-text;
-     font-weight: 700;
+ .modal-cover-title {
+   font-size: toRem(13.5) !important;
+   line-height: toRem(18) !important;
+   color: $color-text;
+   font-weight: 700;
 
-     @include breakpoint-down(md) {
-       font-weight: 600;
-     }
-
-     @include breakpoint-down(sm) {
-       @include font-height(12.5, 19);
-     }
+   @include breakpoint-down(md) {
+     font-weight: 600;
    }
 
-   .modal-cover-meta {
-     @include font-height(12.5, 19);
-     color: $color-ash;
-     margin-top: toRem(3);
+   @include breakpoint-down(sm) {
+     font-size: toRem(12.5) !important;
+   }
+ }
+
+ .modal-cover-meta {
+   @include font-height(12.5, 19);
+   color: $color-ash;
+   margin-top: toRem(3);
 
 
-     @include breakpoint-down(sm) {
-       @include font-height(12.75, 17);
-     }
+   @include breakpoint-down(sm) {
+     @include font-height(12.75, 17);
+   }
 
-     @include breakpoint-down(xs) {
-       @include font-height(12.25, 17);
-     }
+   @include breakpoint-down(xs) {
+     @include font-height(12.25, 17);
    }
  }
 
