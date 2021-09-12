@@ -297,8 +297,8 @@
  }
 
  .modal-cover-title {
-   font-size: toRem(13.5) !important;
-   line-height: toRem(18) !important;
+   font-size: toRem(13.5);
+   line-height: toRem(18);
    color: $color-text;
    font-weight: 700;
 
@@ -307,7 +307,7 @@
    }
 
    @include breakpoint-down(sm) {
-     font-size: toRem(12.5) !important;
+     font-size: toRem(12.5);
    }
  }
 
