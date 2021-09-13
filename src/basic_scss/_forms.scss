@@ -235,7 +235,7 @@ input[type="checkbox"],
         left: 0.390rem;
         display: table;
         @include rectangle-shape(6, 12);
-        border: 0.0625rem solid $color-white;
+        border: toRem(2) solid $color-white;
         border-top-width: 0;
         border-left-width: 0;
         transform: rotate(45deg);
