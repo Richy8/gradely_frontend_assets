@@ -110,7 +110,7 @@ BORDER SHADOW EFFECT
 }
 
 .navigation-shadow-effect {
-  box-shadow: toRem(2) toRem(5) toRem(10) rgba(145, 149, 158, 0.051);
+  box-shadow: toRem(2) toRem(5) toRem(10) rgba(137, 138, 141, 0.051);
 }
 
 .no-shadow {
@@ -304,18 +304,18 @@ $positions: 0,
 
 @each $position in $positions {
   top-#{$position} {
-    top: toRem($position);
+    top: toRem($position) !important;
   }
 
   left-#{$position} {
-    left: toRem($position);
+    left: toRem($position) !important;
   }
 
   bottom-#{$position} {
-    bottom: toRem($position);
+    bottom: toRem($position) !important;
   }
 
   right-#{$position} {
-    right: toRem($position);
+    right: toRem($position) !important;
   }
 }
