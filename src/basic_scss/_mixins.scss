@@ -322,3 +322,27 @@ FONT STYLING
     font-size: toRem($size);
     line-height: toRem($height);
 }
+
+/* ==================
+BOX SHADOW
+===================== */
+@mixin soft-shadow($color: $brand-black) {
+    box-shadow: 0 toRem(1) toRem(4) rgba($color, 0.15);
+}
+
+/* ==================
+RESPONSIVE IMAGES 
+===================== */
+@mixin responsive-width($min-width, $max-width) {
+    min-width: $min-width;
+    width: auto;
+    max-width: $max-width;
+    height: auto;
+}
+
+@mixin responsive-height($min-height, $max-height) {
+    min-height: $min-height;
+    height: auto;
+    max-height: $max-height;
+    width: auto;
+}
