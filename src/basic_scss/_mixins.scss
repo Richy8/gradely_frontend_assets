@@ -326,7 +326,7 @@ FONT STYLING
 /* ==================
 BOX SHADOW
 ===================== */
-@mixin soft-shadow($color: $brand-black) {
+@mixin box-shadow($color: $brand-black) {
     box-shadow: 0 toRem(1) toRem(4) rgba($color, 0.15);
 }
 
