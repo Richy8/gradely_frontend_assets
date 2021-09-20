@@ -292,7 +292,7 @@
 
    @include breakpoint-down(xs) {
      margin-top: toRem(4);
-     padding: toRem(22) toRem(14.5) toRem(17) !important;
+     padding: toRem(22) toRem(12) toRem(17) !important;
    }
  }
 
@@ -363,7 +363,7 @@
    }
 
    @include breakpoint-down(xs) {
-     padding: toRem(14) toRem(14.5) toRem(16) !important;
+     padding: toRem(14) toRem(12) toRem(16) !important;
    }
 
    .btn {
