@@ -98,31 +98,31 @@ $color in $app-color {
 	Avatar Profiling Color Palette
 \*------------------------------------*/
 $chestnut: rgb(184, 129, 53);
-$pampers: #00a9a4;
-$cherry-tomato: #e94b3cff;
+$pampers: rgb(0, 169, 164);
+$cherry-tomato: rgb(233, 75, 60);
 $aspen-gold: rgb(218, 174, 55);
 $verdant-green: rgb(32, 143, 34);
-$orange-shire: #f95700ff;
+$orange-shire: rgb(249, 87, 0);
 $fuschia: rgb(46, 204, 99);
-$toffee: #755139ff;
-$pale-yellow: #ffae00;
-$black-cloud: #101820ff;
-$navy-blue: #28334aff;
-$forest-green: #2c5f2d;
+$toffee: rgb(117, 81, 57);
+$pale-yellow: rgb(255, 174, 0);
+$black-cloud: rgb(14, 29, 44);
+$navy-blue: rgb(37, 50, 79);
+$forest-green: rgb(41, 114, 42);
 $deep-blue: rgb(1, 59, 131);
-$bright-red: #f93822ff;
+$bright-red: rgb(233, 68, 8);
 $crimson: rgb(172, 80, 103);
 $royal-blue: rgb(41, 0, 189);
-$light-green: #6dac4fff;
-$royal-purple: #603f83ff;
+$light-green: rgb(3, 201, 85);
+$royal-purple: rgb(164, 3, 186);
 $scarlet: rgb(213, 14, 123);
-$kelly-green: #339e66ff;
-$miami: #e68736;
+$kelly-green: rgb(51, 158, 102);
+$miami: rgb(220, 124, 40);
 $deep-purple: rgb(51, 13, 72);
-$windsor-wine: #643e46ff;
-$sprout: #394141;
-$slack: #4a154b;
-$fedex: #250c77;
+$windsor-wine: rgb(100, 62, 70);
+$sprout: rgb(57, 65, 65);
+$slack: rgb(74, 21, 75);
+$fedex: rgb(37, 12, 119);
 
 $profile-color: () !default;
 $profile-color: map-merge(("chestnut": $chestnut,
