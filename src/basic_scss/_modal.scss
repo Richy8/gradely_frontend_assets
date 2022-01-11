@@ -3,15 +3,13 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
    width: auto;
    height: auto;
    background: $white-text;
    box-sizing: border-box;
    overflow: auto;
    z-index: 3500;
-   @include transition(0.6s);
-   animation: panel-slide-down 0.6s ease-in-out forwards;
+   animation: zoom-out 0.7s ease-in-out forwards;
  }
 
  .modal-overlay {
