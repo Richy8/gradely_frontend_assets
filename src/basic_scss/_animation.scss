@@ -102,11 +102,11 @@
 // ZOOM OUT 
 @keyframes zoom-out {
     0% {
-        transform: translate(-50%, -50%) scale(.45);
+        transform: translate(-50%, -50%) scale(.65);
     }
 
     50% {
-        transform: translate(-50%, -50%) scale(1.05);
+        transform: translate(-50%, -50%) scale(1.025);
     }
 
     100% {
