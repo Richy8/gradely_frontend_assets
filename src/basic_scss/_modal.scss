@@ -105,7 +105,7 @@
        position: absolute;
        top: toRem(20);
        right: toRem(20);
-       @include square-shape(28);
+       @include square-shape(30);
        border-radius: 50%;
        background: $color-white;
        @include transition(0.4s);
@@ -117,7 +117,6 @@
        @include breakpoint-down(xs) {
          top: toRem(16.5);
          right: toRem(16);
-         @include square-shape(26);
        }
 
        .icon {
@@ -336,7 +335,7 @@
    }
 
    @include breakpoint-down(xs) {
-     padding: toRem(10) toRem(13) !important;
+     padding: toRem(10) toRem(13);
    }
 
    &::-webkit-scrollbar {
