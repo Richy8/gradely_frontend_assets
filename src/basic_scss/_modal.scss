@@ -8,7 +8,7 @@
    background: $white-text;
    box-sizing: border-box;
    overflow: auto;
-   z-index: 6099;
+   z-index: 4999;
    animation: zoom-out 0.7s ease-in-out forwards;
  }
 
@@ -17,7 +17,7 @@
    @include stretch-area;
    position: fixed;
    overflow: auto !important;
-   z-index: 2099;
+   z-index: 3999;
    background: rgba(#000000, .90) !important;
 
    .modal-box {
