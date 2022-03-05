@@ -1,6 +1,6 @@
 // CONVERT PX TO REF 
 @function toRem($size) {
-    @return #{$size/16}rem;
+    @return calc(#{$size/16})rem;
 }
 
 /* ===========================
