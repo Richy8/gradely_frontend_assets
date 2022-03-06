@@ -303,19 +303,19 @@ $positions: 0,
 100;
 
 @each $position in $positions {
-  top-#{$position} {
-    top: toRem($position) !important;
+  .top-#{$position} {
+    top: toRem($position);
   }
 
-  left-#{$position} {
-    left: toRem($position) !important;
+  .left-#{$position} {
+    left: toRem($position);
   }
 
-  bottom-#{$position} {
-    bottom: toRem($position) !important;
+  .bottom-#{$position} {
+    bottom: toRem($position);
   }
 
-  right-#{$position} {
-    right: toRem($position) !important;
+  .right-#{$position} {
+    right: toRem($position);
   }
 }
